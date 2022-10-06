@@ -31,5 +31,24 @@ for (int i =1; i <=10; i++) {
         for (int i =1; i <=512; i=i*2) {
             System.out.println( + i);
         }
+        System.out.println("Домашнее задание 3");
+        System.out.println("Задание 1");
+        int deposit =29000;
+        int total =0;
+        for (int i =1; i <=12; i++) {
+            total = total + deposit;
+            System.out.println("Месяц " + i + " ,сумма накоплений равна " + total + " рублей");
+        }
+        System.out.println("Задание 2");
+double percent = 12;
+double annualRatet = percent/100;
+double monthPercent = annualRatet/12;
+double sum =0;
+
+        for (int i =1; i <=12; i++) {
+            sum = (sum +deposit) *(1+ monthPercent);
+
+            System.out.println("Месяц " + i + " ,сумма накоплений равна " + sum + " рублей");
+        }
     }
 }
